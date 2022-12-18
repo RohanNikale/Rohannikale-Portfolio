@@ -1,0 +1,417 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f2f2f2;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    font-weight: bold;
+    font-size: large;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 70px; */
+    justify-content: space-between;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 70px;
+    /* background-color: white; */
+}
+
+nav ul {
+    height: 60px;
+    padding: 0 70px;
+    display: flex;
+    list-style: none;
+    padding: 0 70px;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    padding: 0 20px;
+}
+
+.bar {
+    display: none;
+}
+
+.mystyle {
+    transform: translateX(0vw);
+
+}
+
+.navbar ul li button{
+    background-color: black;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: none;
+
+}
+@media (max-width:1000px) {
+    nav .logo{
+        padding: 0 30px;
+    }
+    nav ul{
+        padding: 0 30px;
+    }
+    
+}
+@media (max-width:768px) {
+    nav .logo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .bar {
+        display: block;
+        border: 1px solid black;
+        padding: 7px 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.343);
+    }
+
+    nav ul {
+        background-color: #f2f2f2;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 42px;
+        transform: translateX(-170vw);
+        transition: 0.1s;
+        height: 100vh;
+        padding: 0;
+
+
+    }
+
+    nav li {
+        margin: 40px 0 0 0;
+    }
+
+}
+
+
+
+
+.main {
+    display: flex;
+    width: 86%;
+    padding: 50px 0 0 0;
+    margin: auto;
+
+}
+
+.myImg {
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.main .about {
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.main .text {
+    /* background-color: white; */
+    width: 80%;
+}
+
+.main .icon {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon i {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}
+.icon button{
+    background-color: rgb(65, 65, 65);
+    border: none;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+.skills{
+    font-weight: bold;
+}
+.skill{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.skillBar{
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px 0;
+    height:20px;
+}
+@media (max-width:1216px) {
+    .main {
+        width: 100%;
+    }
+
+    .main .text {
+        width: 95%;
+    }
+}
+
+@media (max-width:950px) {
+    .myImg img {
+        width: 90%;
+        
+    }
+
+}
+
+@media (max-width:700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .myImg img {
+        border-radius: 50%;
+        width: 300px;
+        height: 310px;
+    }
+
+    .main .myImg {
+        width: 100%;
+    }
+
+    .main .about {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main .text {
+        width: 100%;
+
+    }
+}
+@media (max-width:443px) {
+
+    .icon button{
+        /* margin: 20px 0; */
+    
+    }
+    .icon i{
+        margin: 20px 10px;
+    }
+}
+@media (max-width:360px) {
+    .myImg img {
+        border-radius: 50%;
+        width: 250px;
+        height: 270px;
+    }
+
+    .main .about {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+.Services {
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Services .items {
+    width: 100%;
+}
+
+.items .serviceItem {
+    /* margin: auto; */
+    width: 100%;
+
+}
+
+.items img {
+    width: 100%;
+    height: 300px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.items figcaption{
+    text-align: center;
+}
+.bg-white{
+    background-color: white;
+}
+
+@media (max-width:1216px) {
+    .Services{
+        width: 96%;
+    }
+    .items img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width:700px) {
+    .items img {
+        width: 100%;
+        height: auto;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .items .serviceItem{
+        width: 100%;
+    }
+
+
+    .Services{
+        width: 100%;
+    }
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.contact h1{
+    margin-top: 70px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input input{
+    margin: 10px 0;
+    height: 55px;
+    width: 50%;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+.input input,textarea:focus{
+    outline: none;
+}
+.input textarea{
+    margin: 10px 0;
+    width: 50%;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sbutton{
+    width: 51%;
+    margin: 10px 0 70px 0;
+
+}
+.sbutton button{
+    background-color: black;
+    border: none;
+    width: 130px;
+    height: 48px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@media (max-width:1216px) {
+    .contact{
+        width: 90%;
+    }
+    .input input{
+        width: 70%;
+    }
+    .input textarea{
+        width: 70%;
+    }
+    .sbutton{
+        width: 71%;
+    
+    } 
+    
+}
+
+@media (max-width:700px) {
+    .contact{
+        width: 100%;
+    }
+    .input input{
+        width: 80%;
+    }
+    .input textarea{
+        width: 80%;
+    }
+    .sbutton{
+        width: 81%;
+    
+    } 
+    footer{
+        font-size: 1rem;
+    }
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: white;
+}
+footer a{
+    color: white;
+}
