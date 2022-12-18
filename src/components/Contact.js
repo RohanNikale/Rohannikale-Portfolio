@@ -30,7 +30,7 @@ const Contact = () => {
         error: 'Form cant\'t be empty'
       }
   )
-
+  
     setContact({ name: '', email: '', message: '' })
   }
   return (
@@ -48,7 +48,7 @@ const Contact = () => {
               <input type="email" value={contact.email} placeholder='Email' name='email' required onChange={handleinput} />
             </div>
             <div className="input">
-              <textarea placeholder='Message' value={contact.message} name="message" id=""  rows="12" onChange={handleinput}></textarea>
+              <textarea placeholder='Message' value={contact.message} name="message" id="" required rows="12" onChange={handleinput}></textarea>
             </div>
             <div className="sbutton">
               <button type='submit'>Submit</button>
