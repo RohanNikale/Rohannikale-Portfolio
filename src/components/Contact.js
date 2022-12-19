@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
     
     
-    const data = fetch('https://portfolio-bakend.vercel.app', {
+    const data = fetch('https://portfolio-bakend.vercel.app/', {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const Contact = () => {
         error: 'Form cant\'t be empty'
       }
   )
-  
+
     setContact({ name: '', email: '', message: '' })
   }
   return (
