@@ -1,7 +1,9 @@
 import React from 'react'
+import img2 from '../rohansmall.jpg'
 import img from '../rohan.jpg'
 import pdf from '../images/Resume.pdf'
 const Rohan = () => {
+  var x = window.matchMedia("(max-width: 700px)")
   return (
     <>
     <section id="home">
@@ -10,7 +12,7 @@ const Rohan = () => {
             <br />
       <div className="main">
         <div className="myImg">
-          <img src={img} alt="" />
+          {x.matches?<img src={img2} alt="" />:<img src={img}/>}
 
         </div>
         <div className="about">
